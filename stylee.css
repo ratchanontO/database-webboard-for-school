@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("/images/a84x.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.boxtop {
+    width: 700px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(10px); /* เพิ่มความเบลอ */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header {
+    background-color: #007bff; /* สีฟ้า */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาอ่อนๆ */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    z-index: 1000;
+}
+
+.header .site-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header .user-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-section span {
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+.header .user-section button {
+    padding: 8px 20px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header  button {
+    padding: 8px 20px;
+    background-color: #0d5e0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.headlogin {
+    background-color: #3498db;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.headlogin {
+    background-color: #1e90ff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #1e90ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+
+button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #1c86ee;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+.shake {
+    animation: shake 0.3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.error-msg {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.success-msg {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 10px;
+}

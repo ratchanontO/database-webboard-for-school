@@ -1,0 +1,123 @@
+body {
+    padding-top: 60px; /* เพิ่มพื้นที่ว่างด้านบน */
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url("/images/a84x.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.boxtop {
+    width: 700px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(34, 34, 34, 0.5);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางแนวนอน */
+    position: absolute; /* ใช้ absolute เพื่อจัดตำแหน่งให้อยู่ข้างบน */
+    top: 50px; /* ปรับระยะห่างจากขอบบน */
+    left: 0; /* รีเซ็ตค่าการเลื่อนทางซ้าย */
+    right: 0; /* รีเซ็ตค่าการเลื่อนทางขวา เพื่อให้ margin ทำงาน */
+}
+/* Header styles */
+.header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; /* ทำให้แถบนี้อยู่บนสุด */
+    top: 0;
+    left: 0;
+    width: 100%; /* ขยายแถบให้เต็มหน้าจอ */
+    z-index: 1000; /* ให้แถบนี้อยู่เหนือเนื้อหาอื่น */
+}
+
+/* ปรับระยะห่างของเนื้อหาเพื่อไม่ให้ถูกบังโดย header */
+body {
+    padding-top: 60px; /* เพิ่มพื้นที่ว่างด้านบน */
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url("/images/a84x.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ส่วนของผู้ใช้งานและปุ่ม Logout */
+.header .user-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-section span {
+    margin-right: 15px;
+    font-size: 1.1em;
+}
+
+.header .user-section button {
+    padding: 5px 15px;
+    background-color: #FF4136;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header .user-section button:hover {
+    background-color: #e60000;
+}
+
+
+
+.header {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* สีตัวหนังสือสีขาว */
+    margin: 0;
+}
+
+.button-container {
+    width: 200px;
+    height: 50px ;
+    margin-right: 5px;
+    /* justify-content: space-between; */
+    
+    /* width: 100%; */
+    /* max-width: 300px; */
+}
+
+.buttonlogin {
+    background-color: #00ff2a;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    /* font-size: 1.2em; */
+}
+
+.buttonregister {
+    background-color: hsl(212, 100%, 50%);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    /* font-size: 1.2em; */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
