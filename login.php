@@ -12,8 +12,6 @@
 
             $username = $_POST['username'];
             $password = $_POST['password'];
-            
-            // เชื่อมต่อกับฐานข้อมูล MySQL
             $servername = "localhost";
             $db_username = "root";
             $db_password = "";
@@ -96,7 +94,7 @@
                 if ($login_error) {
                 ?>
                     <h5 class="error-msg">"ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง"</h5>
-                    <!-- เพิ่มรูปภาพเมื่อกรอกข้อมูลผิด -->
+                    <!-- aเมื่อกรอกข้อมูลผิด -->
                     <br>
                     <img src="images/tom.jpg" alt="tom" width="90" height="90">
                 <?php
